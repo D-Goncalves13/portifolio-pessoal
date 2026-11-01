@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Gonçalves | Desenvolvedor Backend</title>
+    
+    <!-- Meta Tags para Redes Sociais (Open Graph) -->
+    <meta property="og:title" content="Daniel Gonçalves | Desenvolvedor Backend">
+    <meta property="og:description" content="Portfólio de Daniel Gonçalves - Estudante de ADS na Fatec Paulínia & Desenvolvedor Java/Python.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon Verde Neon estilo Terminal -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23000%22/><text x=%2250%25%22 y=%2265%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2255%22 font-family=%22monospace%22 font-weight=%22bold%22 fill=%22%2300ff66%22>&gt;_</text></svg>">
+
+    <!-- Fonte Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- NAVEGAÇÃO FLUTUANTE MATRIX -->
+        <nav class="navbar-glow">
+            <canvas id="matrix-nav-canvas"></canvas>
+            <div class="nav-logo">
+                <span>&gt;_</span> daniel.dev
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre" class="nav-btn">Sobre</a></li>
+                <li><a href="#experiencia" class="nav-btn">Experiência</a></li>
+                <li><a href="#formacao" class="nav-btn">Formação</a></li>
+                <li><a href="#skills" class="nav-btn">Skills</a></li>
+                <li><a href="#certificados" class="nav-btn">Certificados</a></li>
+                <li><a href="#projetos" class="nav-btn nav-btn-highlight">Projetos</a></li>
+            </ul>
+        </nav>
+        <!-- HERO / CABEÇALHO -->
+        <header>
+            <div class="hero-wrapper">
+                <div class="hero-text">
+                    <span class="profile-badge">Estudante de Análise e Desenvolvimento de Sistemas</span>
+                    <h1 class="gradient-title">Daniel Gonçalves</h1>
+                    <p class="subtitle">Desenvolvedor Backend & Analista de Dados | Java • POO • SQL • Python • Excel Avançado • Power BI | Em busca de estágio em TI</p>
+                    
+                    <div class="hero-tags">
+                        <span class="tag">Paulínia - SP</span>
+                        <span class="tag">Fatec Paulínia</span>
+                        <span class="tag">Foco em Backend</span>
+                    </div>
+
+                    <div class="hero-contacts">
+                        <a href="https://github.com/D-Goncalves13" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniel-gon%C3%A7alves-b76559363/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            LinkedIn
+                        </a>
+                        <a href="mailto:daniel.gdp.1308@gmail.com" class="btn btn-secondary">
+                            E-mail
+                        </a>
+                        <button onclick="copiarEmail()" class="btn btn-secondary" id="btn-copy">
+                            Copiar E-mail
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-avatar">
+                    <div class="avatar-frame">
+                        <img src="imagens/perfil.png.png" alt="Foto 1 de Daniel Gonçalves" class="avatar-img img-1">
+                        <img src="imagens/perfil2.png.png" alt="Foto 2 de Daniel Gonçalves" class="avatar-img img-2">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SOBRE MIM -->
+        <section id="sobre" class="reveal">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-card">
+                <p id="typewriter-p1"></p>
+                <p id="typewriter-p2"></p>
+                <p id="typewriter-p3"></p>
+                <p id="typewriter-p4"></p>
+                <p id="typewriter-p5"></p>
+            </div>
+        </section>
+    
+        <!-- EXPERIÊNCIA PROFISSIONAL -->
+        <section id="experiencia" class="reveal">
+            <h2 class="section-title">Experiência Profissional</h2>
+
+            <div class="experience-card">
+
+                <div class="experience-header">
+                    <div>
+                        <h3>Bravo Serviços Logísticos</h3>
+                        <span class="experience-role">
+                            Jovem Aprendiz — Faturamento Syngenta 
+                        </span>
+                    </div>
+
+                    <span class="experience-date">
+                        2026 - Atualmente
+                    </span>
+                </div>
+
+                <div class="experience-tags">
+                    <span class="tag">Administrativo</span>
+                    <span class="tag">Organização</span>
+                    <span class="tag">Análise de Informações</span>
+                    <span class="tag">Trabalho em Equipe</span>
+                    <span class="tag">SAP</span>
+                </div>
+
+                <p class="experience-description">
+                    Atuação como Jovem Aprendiz na área administrativa, desenvolvendo
+                    experiência profissional em organização, controle de informações,
+                    apoio às atividades administrativas e trabalho em equipe, uso de ferramentas como Excel e SAP.
+                </p>
+
+                <div class="experience-terminal">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">experiencia.txt</span>
+                    </div>
+
+                    <div class="terminal-body">
+                        <p><span class="terminal-symbol">></span> cargo: Jovem Aprendiz</p>
+                        <p><span class="terminal-symbol">></span> área: Faturamento Syngenta</p>
+                        <p><span class="terminal-symbol">></span> empresa: Bravo Serviços Logísticos</p>
+                        <p><span class="terminal-symbol">></span> status: Em desenvolvimento profissional...</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FORMAÇÃO ACADÊMICA -->
+        <section id="formacao" class="reveal">
+            <h2 class="section-title">Formação Acadêmica</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Fatec Paulínia</h3>
+                    <div class="skill-tags">
+                        <span class="tag">ADS</span>
+                        <span class="tag">2026 - 2028</span>
+                        <span class="tag tag-loading">Cursando<span class="dots-loader"></span> <span class="cmd-bar"></span></span>
+                    </div>
+                    <p class="card-paragraph">
+                        Curso superior focado em Desenvolvimento de Sistemas, Programação, Banco de Dados, Engenharia de Software e Arquitetura Backend.
+                    </p>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Colégio Adventista de Paulínia</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Ensino Médio</span>
+                        <span class="tag">2023 - 2025</span>
+                        <span class="tag">Concluído</span>
+                    </div>
+                    <p class="card-paragraph">
+                        Formação de ensino médio com desenvolvimento de competências acadêmicas, organizacionais e sociais.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES TÉCNICAS -->
+        <!-- HABILIDADES TÉCNICAS -->
+        <section id="skills" class="reveal">
+            <h2 class="section-title">Tech Stack & Conhecimentos</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-box">
+                    <h3>Linguagens</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Análise de Dados & BI</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Excel Intermediario</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Banco de Dados</h3>
+                    <div class="skill-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Modelagem ER</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Conceitos & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">POO</span>
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">IntelliJ IDEA</span>
+                        <span class="tag">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Frontend Básico</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">IA Prompts</span>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </section>
+
+        <!-- CERTIFICAÇÕES -->
+        <section id="certificados" class="reveal">
+            <h2 class="section-title">Certificações</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Java Básico</h3>
+                    <div class="skill-tags">
+                        <span class="tag">DIO</span>
+                        <span class="tag">2 Horas</span>
+                        <span class="tag">Concluído</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Java Orientado a Objetos</h3>
+                    <div class="skill-tags">
+                        <span class="tag">DIO</span>
+                        <span class="tag">16 Horas</span>
+                        <span class="tag">Concluído</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Excel Avançado</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Microlins</span>
+                        <span class="tag">21 Horas</span>
+                        <span class="tag">Concluído</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Power BI</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Microlins</span>
+                        <span class="tag">21 Horas</span>
+                        <span class="tag">Concluído</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <!-- PROJETOS -->
+        <section id="projetos" class="reveal">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" onclick="mudarSlide(-1)">❮</button>
+                
+                <div class="carousel-track-container">
+                    <div class="projects-grid carousel-track">
+                        
+                        <!-- PROJETO 1 -->
+                        <div class="project-card carousel-slide">
+                            <div>
+                                <h3 class="project-title">Sistema Bancario</h3>
+                                <div class="code-preview">
+                                    <div class="code-header">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                        <span class="code-title">Main.java</span>
+                                    </div>
+                                    <div class="code-body">
+<pre><span class="kw">public class</span> <span class="cls">Main</span> {
+    <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+        <span class="cls">Conta</span> c1 = <span class="kw">new</span> <span class="cls">Conta</span>(<span class="str">"Daniel"</span>, <span class="str">"123.456.789-0"</span>);
+        c1.<span class="fn">banco</span>();
+    }
+}</pre>
+                                    </div>
+                                </div>
+                                <p class="project-desc">
+                                    Aplicação desenvolvida em Java focada em conceitos de Programação Orientada a Objetos (POO), permitindo criação de conta, depositar, transferir, sacar e verificar saldo.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="project-techs">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">POO</span>
+                                    <span class="tag">Git</span>
+                                </div>
+                                <a href="https://github.com/D-Goncalves13/projeto-banco-java-v1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                                    Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 2 -->
+                        <div class="project-card carousel-slide">
+                            <div>
+                                <h3 class="project-title">Portfólio Pessoal (Tema Hacker / OLED)</h3>
+                                <div class="code-preview">
+                                    <div class="code-header">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                        <span class="code-title">index.html</span>
+                                    </div>
+                                    <div class="code-body">
+<pre><span class="kw">&lt;nav</span> <span class="cls">class</span>=<span class="str">"navbar-glow"</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;canvas</span> <span class="cls">id</span>=<span class="str">"matrix-canvas"</span><span class="kw">&gt;&lt;/canvas&gt;</span>
+    <span class="kw">&lt;div</span> <span class="cls">class</span>=<span class="str">"nav-logo"</span><span class="kw">&gt;</span>&amp;gt;_ daniel.dev<span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/nav&gt;</span></pre>
+                                    </div>
+                                </div>
+                                <p class="project-desc">
+                                    Website responsivo estilo terminal/hacker desenvolvido com HTML5, CSS3 avançado (animações, efeito glassmorphism e cores OLED) e JavaScript Vanilla para o efeito chuva Matrix.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="project-techs">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                                <a href="https://github.com/D-Goncalves13/protifolio-pessoal" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                                    Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- PROJETO 3: FLUXO DE DADOS -->
+                        <div class="project-card carousel-slide">
+                            <div>
+                                <h3 class="project-title">Fluxo de Dados & Pipeline ETL</h3>
+                                <div class="code-preview">
+                                    <div class="code-header">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                        <span class="code-title">pipeline.py</span>
+                                    </div>
+                                    <div class="code-body">
+<pre><span class="kw">import</span> pandas <span class="kw">as</span> pd
+
+<span class="kw">def</span> <span class="fn">processar_dados</span>(df):
+    df_clean = df.<span class="fn">dropna</span>()
+    <span class="kw">return</span> df_clean.<span class="fn">groupby</span>(<span class="str">"categoria"</span>).<span class="fn">sum</span>()</pre>
+                                    </div>
+                                </div>
+                                <p class="project-desc">
+                                    Projeto focado no tratamento, manipulação e estruturação de fluxos de dados (ETL). Utiliza scripts em Python, Pandas e consultas SQL para ingestão e transformação, integrado com Power BI.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="project-techs">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Pandas</span>
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">Power BI</span>
+                                    <span class="tag">ETL</span>
+                                </div>
+                                <a href="https://github.com/D-Goncalves13" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                                    Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carousel-btn next-btn" onclick="mudarSlide(1)">❯</button>
+            </div>
+
+            <!-- Indicadores (Pontinhos) -->
+            <div class="carousel-dots">
+                <span class="dot-indicator active" onclick="posicionarSlide(0)"></span>
+                <span class="dot-indicator" onclick="posicionarSlide(1)"></span>
+                <span class="dot-indicator" onclick="posicionarSlide(2)"></span>
+            </div>
+        </section>
+        <!-- RODAPÉ -->
+        <footer>
+            <p>&copy; 2026 Daniel Gonçalves. Desenvolvido com HTML, CSS e JavaScript e Prompts de IA.</p>
+        </footer>
+
+
+        
+    <!-- SCRIPTS JAVASCRIPT -->
+    <script>
+
+        // CONTROLE DO CARROSSEL DE PROJETOS
+        let indiceAtual = 0;
+
+        function atualizarCarrossel() {
+            const track = document.querySelector('.carousel-track');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.dot-indicator');
+            
+            if (!track || slides.length === 0) return;
+            
+            // Move a trilha de slides na horizontal
+            track.style.transform = `translateX(-${indiceAtual * 100}%)`;
+            
+            // Atualiza os pontinhos indicativos
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === indiceAtual);
+            });
+        }
+
+        function mudarSlide(direcao) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            if (slides.length === 0) return;
+            
+            indiceAtual += direcao;
+            
+            if (indiceAtual < 0) {
+                indiceAtual = slides.length - 1;
+            } else if (indiceAtual >= slides.length) {
+                indiceAtual = 0;
+            }
+            
+            atualizarCarrossel();
+        }
+
+        function posicionarSlide(index) {
+            indiceAtual = index;
+            atualizarCarrossel();
+        }
+
+        // Inicializa o carrossel assim que a página carregar
+        window.addEventListener("load", () => {
+            atualizarCarrossel();
+        });
+        // Função para Copiar E-mail
+        function copiarEmail() {
+            const email = "daniel.gdp.1308@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                const btn = document.getElementById("btn-copy");
+                const originalText = btn.innerText;
+                btn.innerText = "Copiado! ✓";
+                btn.style.borderColor = "#00ff66";
+                btn.style.color = "#00ff66";
+
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.borderColor = "";
+                    btn.style.color = "";
+                }, 2000);
+            });
+        }
+
+        // Animação Reveal ao Rolar a Página
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal();
+
+        // Efeito Matrix de Fundo na Navbar
+        const canvas = document.getElementById('matrix-nav-canvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+
+            function resizeCanvas() {
+                const nav = canvas.parentElement;
+                canvas.width = nav.offsetWidth;
+                canvas.height = nav.offsetHeight;
+            }
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+            const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            const alphabet = katakana + latin;
+
+            const fontSize = 11;
+            const columns = Math.floor(canvas.width / fontSize) + 1;
+            const rainDrops = Array(columns).fill(1);
+
+            function drawMatrix() {
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                ctx.fillStyle = '#00ff66';
+                ctx.font = fontSize + 'px monospace';
+
+                for (let i = 0; i < rainDrops.length; i++) {
+                    const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                    ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+
+                    if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.96) {
+                        rainDrops[i] = 0;
+                    }
+                    rainDrops[i]++;
+                }
+            }
+            setInterval(drawMatrix, 45);
+        }
+        // EFEITO DIGITAÇÃO CMD (TYPEWRITER) - TEXTO ATUALIZADO
+const paragraphs = [
+    "Sou estudante de Análise e Desenvolvimento de Sistemas na Fatec Paulínia e apaixonado por desenvolvimento de software.",
+    "Atualmente atuo como Jovem Aprendiz na Bravo Serviços Logísticos, onde desenvolvo habilidades administrativas, organização, análise de informações e trabalho em equipe.",
+    "Tenho conhecimentos em Java, Programação Orientada a Objetos, SQL e Python e estou aprofundando meus estudos para atuar como Desenvolvedor Backend.",
+    "Busco uma oportunidade de estágio em tecnologia para aplicar meus conhecimentos, continuar aprendendo e contribuir com soluções para a empresa.",
+    "Tenho foco no aprendizado de linguagens como Java e Python, além de conceitos sólidos de Orientação a Objetos, bancos de dados relacionais (MySQL) e ferramentas como Git/GitHub. Estou constantemente me aprimorando em busca da minha primeira oportunidade como estagiário ou desenvolvedor júnior."
+];
+
+const speed = 14; // Velocidade da digitação (ms por caractere)
+
+function typeAllParagraphs(pIndex = 0, charIndex = 0) {
+    if (pIndex < paragraphs.length) {
+        const el = document.getElementById(`typewriter-p${pIndex + 1}`);
+        if (el) {
+            el.classList.add("cursor-block");
+            if (charIndex < paragraphs[pIndex].length) {
+                el.textContent += paragraphs[pIndex].charAt(charIndex);
+                setTimeout(() => typeAllParagraphs(pIndex, charIndex + 1), speed);
+            } else {
+                el.classList.remove("cursor-block");
+                setTimeout(() => typeAllParagraphs(pIndex + 1, 0), 200); // Pausa entre parágrafos
+            }
+        }
+    }
+}
+
+// Inicia a animação ao carregar a página
+window.addEventListener("load", () => typeAllParagraphs());
+
+// ALTERNÂNCIA AUTOMÁTICA DE FOTOS DE PERFIL (a cada 4 segundos)
+const avatarFrame = document.querySelector('.avatar-frame');
+
+if (avatarFrame) {
+    setInterval(() => {
+        avatarFrame.classList.toggle('swap');
+    }, 4000); // 4000ms = 4 segundos (ajuste se quiser mais rápido ou devagar)
+}
+
+    </script>
+</body>
+</html>
